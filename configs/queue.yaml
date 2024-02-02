@@ -1,0 +1,9 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: Queue
+metadata:
+  name: my-queue
+spec:
+  name: my-queue
+  vhost: "/"
+  rabbitmqClusterReference:
+    name: hr-rabbitmq-cluster

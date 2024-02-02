@@ -1,0 +1,10 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: Exchange
+metadata:
+  name: my-exchange
+spec:
+  name: my-exchange
+  vhost: "/"
+  type: direct
+  rabbitmqClusterReference:
+    name: hr-rabbitmq-cluster
